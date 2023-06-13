@@ -33,7 +33,7 @@ const Get = () => {
 
 
         axios.get(`https://jungle-green-katydid-suit.cyclic.app/jobs`,obj).then((res) => setData(res.data)).catch((err) => console.log(err))
-    }, [search,filter,sort])
+    }, [search,filter,sort,page])
 
     const ref1 = useRef(null)
 
